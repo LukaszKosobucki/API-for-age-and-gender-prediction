@@ -1,0 +1,110 @@
+body {
+    background-color:#212121;
+    margin: 0;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar {
+    width: 100%;
+    margin: 0 0 0 0;
+    height: 80px;
+    background-color: #2b2b2b;
+}
+
+.register_inputs {
+    margin-left: 40%;
+    width: 300px;
+    margin-top: 30px;
+}
+
+#use-case-btn{
+    width: 200px;
+}
+
+#left{
+    display: inline-block;
+    margin-left: 15px;
+    float: left;
+}
+
+h1{
+    display: inline-block;
+    margin-left: calc(40% - 215px);
+    margin-top: 10px
+}
+
+#docs-btn{
+    width: 200px;
+    margin-left: 15px;
+    float: left;
+}
+
+#right{
+    display: inline-block;
+    margin-right: 15px;
+    float: right;
+}
+
+#submit {
+    display: block;
+    margin-top: 25px;
+    width: 135px;
+}
+
+button {
+    font-size: 25px;
+    color: white;
+    margin-top: 15px;
+    border-radius: 10px;
+    height: 50px;
+    background-color: #363e4d;
+    border: 0px;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+input {
+    display: block;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 2px solid #363e4d;
+    padding-left: 5px;
+    height: 25px;
+    font-size: 20px;
+    width: 400px;
+}
+
+#age{
+    width: 125px;
+}
+
+input:focus{
+    outline: none;
+}
+
+select{
+    font-size: 20px;
+    display: block;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 2px solid #363e4d;
+    padding-left: 5px;
+    height: 30px;
+    width: 135px;
+}
+
+select:focus {
+    outline: none;
+}
+
+#video-div{
+    display: block;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+}
+

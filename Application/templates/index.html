@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Use Case</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+
+</head>
+<body>
+
+<div class="navbar">
+
+    <a id="left" href="/">
+        <button id="use-case-btn" >
+            Use Example
+        </button>
+    </a>
+
+    <h1 >
+        Use Example
+    </h1>
+
+    <a id="right" href="/api-docs">
+        <button id="docs-btn">
+            Documentation
+        </button>
+    </a>
+
+</div>
+
+<div class="register_inputs">
+
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Second Name">
+    <input type = "email" placeholder="E-mail">
+    <input type="number" id="age" placeholder="Age">
+
+    <select id="gender">
+        <option value="0">Gender</option>
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+    </select>
+
+    <button id="submit">submit</button>
+    <div id="video-div">
+        <video id="webcam" autoplay playsinline width="400" height="400"></video>
+        <canvas id="canvas" class="d-none"></canvas>
+    </div>
+</div>
+
+
+
+</body>
+    <script src="../static/main.js"></script>
+</html>

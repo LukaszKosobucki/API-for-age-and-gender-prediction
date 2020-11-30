@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Api Documentation</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/docs.css">
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+
+</head>
+<body>
+
+<div class="navbar">
+
+    <a id="left" href="/">
+        <button id="use-case-btn" >
+            Use Case
+        </button>
+    </a>
+
+    <h1 >
+        Documentation
+    </h1>
+
+    <a id="right" href="/api-docs">
+        <button id="docs-btn">
+            Documentation
+        </button>
+    </a>
+
+</div>
+<div id="content">
+
+        <div class="doc-div">
+            <h2>Wprowadzenie</h2>
+
+            Aby korzystać z udostępnionego pod tym adresem API,
+            najpierw trzeba przygotować swoją aplikację do wysyłania
+            i odbierania danych do i od aktualnej domeny.
+            <br>
+            <br>
+            Po prawej stronie został przedstawiony przykład kodu
+            w Javascripcie, który przesyła zakodowany do ciągu znaków base64,
+            obrazek na ktorym ma zostać przeprowadzona predykcja, oraz
+            odbieranie informacji zwrotnej w postaci JSON'a.
+
+        </div>
+
+        <div class="ss-div">
+            <img src="../resources/code-example.jpg" alt="">
+        </div>
+
+        <div class="doc-div">
+            <h2>Jakie dane wysłać?</h2>
+
+            To co otrzymuje użytkownik udostępnionego tutaj API, to tylko
+            wynikowa skomplikowanego algorytmu który stara się dokonać,
+            jak najlepszej predykcji.Jednak nawet on nie jest nieomylny, tak jak zwykły człowiek nie
+            da rady nieomylnie ocenić wieku osoby z każdej perspektywy i profilu.
+            <br>
+            <br>
+            Aby jednak zmaksymalizować wynik powodzenia rozpoznania twarzy,
+            na zdjęciu i dokonania trafnej predykcji zalecane jest aby zdjęcia
+            wykonywane z aplikacji która będzie potrzebować takowej predykcji byly
+            wykonywane jak najbardziej frontalnie przy jak najlepszym jednolitym oświetleniu.
+        </div>
+
+        <div class="ss-div">
+
+            <img src="../resources/bad-example.jpg" alt="">
+
+        </div>
+
+        <div class="doc-div">
+            <h2>Do czego używać?</h2>
+
+            Przykład użycia aplikacji jest wg. uznania użytkownika.
+            Głównym celem tego API jest kontrola użtykowników
+            rejestrujących się do portali społecznościowych,
+            tak aby nieodpowiednie osoby nie mogły się podszywać pod inne,
+            lub aby zbyt młodzi użytkownicy nie mogli korzystać ze stron dla dorosłych.
+            <br>
+            <br>
+            Jednak to API może zostać także do czegokolwiek innego. To do czego,
+            zostanie użyte zależy tylko od osób korzystających z niego.
+        </div>
+
+        <div class="ss-div">
+
+                <img src="../resources/good-example.jpg" alt="">
+
+        </div>
+
+</div>
+
+
+
+
+<!--<canvas id="canvas" class="d-none"></canvas>-->
+
+</body>
+    <script src="../static/docs.js"></script>
+</html>
