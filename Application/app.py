@@ -4,6 +4,7 @@ from json import loads
 app = Flask(__name__)
 app.config["DEBUG"] = True
 
+
 @app.route('/')
 def home_page():
     return render_template("index.html")
@@ -21,10 +22,21 @@ def api_all():
         snap_data = loads(snap_data)
         try:
             age, gender = age_and_gender_predictor(snap_data['picture'])
-            result = {
-                "age": age,
-                "gender": gender
-            }
+            if gender == 120:
+                result = {
+                    "error": age,
+                    "error_number": gender
+                }
+            elif gender == 121:
+                result = {
+                    "error": age,
+                    "error_number": gender
+                }
+            else:
+                result = {
+                    "age": age,
+                    "gender": gender
+                }
             print(f"age: {result['age']}, gender: {result['gender']}")
             return jsonify(result)
         except:
