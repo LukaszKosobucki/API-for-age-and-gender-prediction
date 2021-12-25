@@ -1,5 +1,5 @@
 # API-for-age-and-gender-prediction
-This is an open-source project, that's goal is to make a functional API to determinate user gender and age to protect social websites from hemming.
+Goal is to make a functional API to determinate user gender and age to protect social websites from hemming.
 
 
 To work application correctly you have to add essential classificators to face_classificators folder, which you can download from: 
